@@ -37,14 +37,14 @@ bool Evenement::ajouter(){bool test=false;
                                                 QString nb_p_string=QString::number(nb_p);
                                               //  QString dd_string=QDate::fromString(dd_string,"d'MM'MMcaryyyy");
                                                   QString budget_string=QString::number(budget);
-                               query.prepare("INSERT INTO Evenement (ref, nb_p, dd,df,lieu,budget) "
+                               query.prepare("INSERT INTO EVENEMENT (ref, nb_p, dd,df,lieu,budget) "
                                              "VALUES (:ref, :nb_p, :dd, :df, :lieu, :budget)");
                                query.bindValue(":ref", ref_string);
                                query.bindValue(":nb_p", nb_p_string);
                                query.bindValue(":dd", dd);
                                query.bindValue(":df", df);
                                query.bindValue(":lieu", lieu);
-                               query.bindValue(":budget", budget);
+                               query.bindValue(":budget", budget_string);
 
                                query.exec();
 
