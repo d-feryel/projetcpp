@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qmt>
+ <project>
+  <uid>{1cf51660-30a6-4e4b-9ed4-0e4c8cfbac0b}</uid>
+  <root-package>
+   <instance>
+    <MPackage>
+     <base-MObject>
+      <MObject>
+       <base-MElement>
+        <MElement>
+         <uid>{41b66bbf-af3c-4117-a444-015005cd631f}</uid>
+        </MElement>
+       </base-MElement>
+       <name>g</name>
+       <children>
+        <handles>
+         <handles>
+          <qlist>
+           <item>
+            <handle>
+             <uid>{3b84b068-a578-413c-b601-44e5bd77eac8}</uid>
+             <target>
+              <instance type="MCanvasDiagram">
+               <MCanvasDiagram>
+                <base-MDiagram>
+                 <MDiagram>
+                  <base-MObject>
+                   <MObject>
+                    <base-MElement>
+                     <MElement>
+                      <uid>{3b84b068-a578-413c-b601-44e5bd77eac8}</uid>
+                     </MElement>
+                    </base-MElement>
+                    <name>g</name>
+                   </MObject>
+                  </base-MObject>
+                  <toolbarid>General</toolbarid>
+                 </MDiagram>
+                </base-MDiagram>
+               </MCanvasDiagram>
+              </instance>
+             </target>
+            </handle>
+           </item>
+          </qlist>
+         </handles>
+        </handles>
+       </children>
+      </MObject>
+     </base-MObject>
+    </MPackage>
+   </instance>
+  </root-package>
+ </project>
+</qmt>
