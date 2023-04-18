@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>quitter</class>
+ <widget class="QDialog" name="quitter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>369</width>
+    <height>236</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="rester">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+border-radius:15px;
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+border-right :1px solid #aaaaaa;
+border-bottom :1px solid #aaaaaa;
+}
+QPushButton:enabled {
+background-color: #E1F4FF;
+color: #0c2f70;
+}
+QPushButton:pressed {
+background-color:blue;
+color: white;
+}
+
+QPushButton:hover:!pressed {
+
+background-color : #0d2f72;
+color: #fffffe;
+
+}
+QPushButton:disabled{
+boackground-color:#aaaaaa;
+color :ffffff;
+}</string>
+   </property>
+   <property name="text">
+    <string>oui</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="quitter_2">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>130</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+border-radius:15px;
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+border-right :1px solid #aaaaaa;
+border-bottom :1px solid #aaaaaa;
+}
+QPushButton:enabled {
+background-color: #E1F4FF;
+color: #0c2f70;
+}
+QPushButton:pressed {
+background-color:blue;
+color: white;
+}
+
+QPushButton:hover:!pressed {
+
+background-color : #0d2f72;
+color: #fffffe;
+
+}
+QPushButton:disabled{
+boackground-color:#aaaaaa;
+color :ffffff;
+}</string>
+   </property>
+   <property name="text">
+    <string>non</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>311</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font: 63 13pt &quot;Segoe UI Semibold&quot;;
+ 
+
+color:rgb(24, 50, 109);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>vous voulez vraiment quitter?</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="fayed">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>371</width>
+     <height>241</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>fayed</zorder>
+  <zorder>rester</zorder>
+  <zorder>quitter_2</zorder>
+  <zorder>label</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
