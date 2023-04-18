@@ -2,6 +2,10 @@
 #define EVENEMENT_H
 #include <QString>
 #include <QDate>
+#include <QSqlQueryModel>
+namespace Ui {
+class Evenement;
+}
 class Evenement
 {
 public:
@@ -19,13 +23,20 @@ public:
     void setdf(QDate);
     void setlieu(QString);
     void setbudget(float);
-    bool ajouter();
-
-
+    bool ajouter_event();
+    bool modifier_event();
+    bool supprimer_event(int ref);
+    QSqlQueryModel* afficher_event();
+    void chercher_event(const QString &le_chercher);
+    QSqlQueryModel * trie_ref();
+    QSqlQueryModel * trie_lieu();
+    QSqlQueryModel * trie_nb_p();
+    bool existeId(int ref);
 
 
 
 private :
+    Ui::Evenement *ui;
     int ref,nb_p;
     QString lieu;
     float budget;

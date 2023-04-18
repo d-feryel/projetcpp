@@ -1,8 +1,14 @@
-QT       += sql
+QT       += core gui sql multimedia printsupport charts network serialport
+QT       += charts
+QT += core gui
 
+QT       += network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
+LIBS+= -LC:/testingSSL/OpenSSL-Win32
+LIBS+= -LC:/testingSSL/OpenSSL-Win32/bin
+LIBS+= -lssl32
 CONFIG += c++11
+
 
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
@@ -19,12 +25,14 @@ SOURCES += \
     connection.cpp \
     evenement.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    smtp.cpp
 
 HEADERS += \
     connection.h \
     evenement.h \
-    mainwindow.h
+    mainwindow.h \
+    smtp.h
 
 FORMS += \
     mainwindow.ui
