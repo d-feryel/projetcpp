@@ -3,6 +3,7 @@
 #include <QApplication>
 #include <QMessageBox>
 #include "connection.h"
+#include <QObject>
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -17,7 +18,7 @@ int main(int argc, char *argv[])
 
 }
     else
-        QMessageBox::information(nullptr, QObject::tr("database is not open"),
+        QMessageBox::critical(nullptr, QObject::tr("database is not open"),
                     QObject::tr("connection failed.\n"
                                 "Click Cancel to exit."), QMessageBox::Cancel);
 

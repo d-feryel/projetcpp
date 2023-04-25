@@ -1,5 +1,5 @@
-QT       += sql
-
+QT       += sql printsupport charts serialport
+QT       += core gui sql network multimedia multimediawidgets charts printsupport widgets axcontainer
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
@@ -16,18 +16,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    client.cpp \
+    arduino.cpp \
+    clients.cpp \
     connection.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
-    client.h \
+    arduino.h \
+    clients.h \
     connection.h \
     mainwindow.h
 
 FORMS += \
     mainwindow.ui
+TRANSLATIONS += \
+    PremiereApp_fr_FR.ts
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
